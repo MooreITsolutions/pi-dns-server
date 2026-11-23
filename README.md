@@ -80,8 +80,6 @@ This process generates a private and public key pair. The private key is stored 
 
 This approach eliminates the need to transmit the account password during SSH authentication and provides a more secure alternative to password-based login.
 - **Private Key Protection:**
-	- Private Key Protection
-
 The private key is never shared or transmitted during an SSH session. Instead, it remains securely stored on the host machine and is protected by a passphrase. Once the correct passphrase is entered, the private key can be used to generate a cryptographic signature in response to the server's authentication challenge.
 
 The Raspberry Pi then verifies this signature against the corresponding public key stored on the server. This process allows the server to authenticate the user without ever requiring the private key to leave the host machine or transmitting the account password over the network.
